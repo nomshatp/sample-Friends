@@ -44,6 +44,6 @@ This step is optional, it links the sample mobile app to a Telerik Analytics pro
 By default the Friends Sample is configured to use HTTP. In case you wish to switch to HTTPS please update the appSettings.everlive.scheme setting in the /app/app.js file to "https".
 
 ## Running the sample app
-Once the app is configured as described in the previous section, you can run it either on a real device or in the Telerik AppBuilder simulator.
+Once the app is configured as described in the previous section, you can run it either on a real device or in the Telerik AppBuilder simulator. See more info how in this [help article](http://docs.telerik.com/platform/appbuilder/sample-apps/clone-sample-app)
 
 > Make sure the emulator or the device you use have working Internet connection when running the sample. Internet connection is necessary in order to connect to the cloud.
