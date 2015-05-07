@@ -41,7 +41,7 @@ To set the API key open the /app/app.js file and replace $EVERLIVE_API_KEY$ with
 - [optional] **API key for Telerik Analytics**  
 This step is optional, it links the sample mobile app to a Telerik Analytics project in your account. Just find the $EQATEC_PRODUCT_KEY$ placeholder in the code and replace it with a product key of Analytics Javascript project. If you do not set this the sample will still work, but no analytics data will collected.
 
-By default the Friends Sample is configured to use HTTP. In case you wish to switch to HTTPS please update the appSettings.everlive.scheme setting in the /app/app.js file to "https".
+By default the Friends Sample is configured to use HTTP. In case you wish to switch to HTTPS please update the global.BS_SCHEME setting in the /app/app.js file to "https".
 
 ## Running the sample app
 Once the app is configured as described in the previous section, you can run it either on a real device or in the Telerik AppBuilder simulator. See more info how in this [help article](http://docs.telerik.com/platform/appbuilder/sample-apps/clone-sample-app).
