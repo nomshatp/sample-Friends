@@ -8,7 +8,7 @@ var __extends = this.__extends || function (d, b) {
 var observable = require("data/observable");
 var dialogs = require("ui/dialogs");
 var validationModule = require("../utils/validate");
-var LocalSettings = require("local-settings");
+var AppSettings = require("application-settings");
 
 var SignUpViewModel = (function (_super){
     

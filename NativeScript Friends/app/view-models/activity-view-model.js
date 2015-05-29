@@ -5,7 +5,7 @@ var __extends = this.__extends || function (d, b) {
     d.prototype = new __();
 };
 
-var LocalSettings = require("local-settings");
+var AppSettings = require("application-settings");
 var observable = require("data/observable");
 var observableArray = require("data/observable-array");
 var Everlive = require("../lib/everlive.all.min");
@@ -27,7 +27,7 @@ var ActivityViewModel = (function (_super) {
         },
         set: function(value) {
             this._isLoading = value;
-            this.notify({ object: this, eventName: observable.knownEvents.propertyChange, propertyName: "isLoading", value: value });
+            this.notify({ object: this, eventName: observable.Observable.propertyChangeEvent, propertyName: "isLoading", value: value });
         },
         enumerable: true,
         configurable: true
@@ -42,7 +42,7 @@ var ActivityViewModel = (function (_super) {
         {
             if (this._activity !== value) {
                 this._activity = value;
-                this.notify({ object: this, eventName: observable.knownEvents.propertyChange, propertyName: "activity", value: value });
+                this.notify({ object: this, eventName: observable.Observable.propertyChangeEvent, propertyName: "activity", value: value });
             }
         }
     });
@@ -120,7 +120,7 @@ var ActivityViewModel = (function (_super) {
     Object.defineProperty(ActivityViewModel.prototype, "userCanDeleteActivity", {
         get: function () 
         {
-            var userId = LocalSettings.getString(USER_ID);
+            var userId = AppSettings.getString(USER_ID);
             return this._activity.User.Id === userId;
         }
     });
