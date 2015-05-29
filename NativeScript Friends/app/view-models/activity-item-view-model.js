@@ -136,10 +136,8 @@ var ActivityItemViewModel = (function (_super){
 function getResponsiveUrl (url, targetWidth) {
     if (typeof(url) === 'undefined' && typeof(targetWidth) === 'undefined') {
         return '';
-        alert("none");
     }
-    alert("https://bs1.cdn.telerik.com/image/v1/" + BS_API_KEY + "/resize=w:" + targetWidth + "/" + url);
-        
+
     return "https://bs1.cdn.telerik.com/image/v1/" + BS_API_KEY + "/resize=w:" + targetWidth + "/" + url;
 }
 
