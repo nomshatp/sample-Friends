@@ -60,10 +60,6 @@ var ActivityViewModel = (function (_super) {
             query.orderDesc("CreatedAt");
             
             var expandExp = {
-                "UserId": {
-                    "ReturnAs": "UserName",
-                    "SingleField": "DisplayName"
-                },
                 "UserId":{
                   "ReturnAs":"User",
                   "TargetTypeName":"Users",
@@ -84,8 +80,7 @@ var ActivityViewModel = (function (_super) {
                         var activityItem = new activityItemViewModel.ActivityItemViewModel(data.result[i]);
                         data.result[i] = activityItem;
                     }
-                    
-                    
+                                        
                     that._comments.push(data.result);
                 }
                 that.isLoading = false;
