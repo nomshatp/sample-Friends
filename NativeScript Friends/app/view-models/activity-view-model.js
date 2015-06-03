@@ -79,11 +79,12 @@ var ActivityViewModel = (function (_super) {
             .then(function(data) {
                 if (data && data.count !== 0)
                 {
-                    for (i=0; i<data.count; i++)
+                    for (i = 0; i < data.count; i++)
                     {
                         var activityItem = new activityItemViewModel.ActivityItemViewModel(data.result[i]);
                         data.result[i] = activityItem;
                     }
+                    
                     
                     that._comments.push(data.result);
                 }
